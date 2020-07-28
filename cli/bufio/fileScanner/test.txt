@@ -1,0 +1,16 @@
+
+
+    Directory: D:\Jack\Work\GitHub\go-standard-libraries
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          2020-07-28 12:51 AM                cli
+-a---          2020-07-27  9:53 PM            284 .gitignore
+-a---          2020-07-28 12:56 AM        2171904 bufiodemo.exe
+-a---          2020-07-27 10:57 PM        2192896 dinnertotal.exe
+-a---          2020-07-27 11:08 PM        2312704 flagtest.exe
+-a---          2020-07-27  9:53 PM           1082 LICENSE
+-a---          2020-07-28 12:51 AM            240 README.md
+-a---          2020-07-27 11:17 PM        2308096 scandemo.exe
+-a---          2020-07-28  1:01 AM              0 test.txt
+

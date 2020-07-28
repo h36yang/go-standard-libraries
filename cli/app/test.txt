@@ -1,0 +1,2 @@
+The Go standard library is a set of packages that contain pre-written code to help you build applications at a faster rate.
+This course will show you how to leverage these packages to handle input, read and write files, create logs, and more.
