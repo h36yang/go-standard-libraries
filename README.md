@@ -36,3 +36,24 @@ Practice materials for "The Go Standard Library" course
   * Format messages with different flags - refer to https://golang.org/pkg/log for more details
 * Utilizing the Trace Logger with `runtime/trace` package
   * Use `go tool trace <TRACE_FILE>.out` command to open and view the trace file
+
+### Using the Time Package
+* Understanding Wall Clock vs Monotonic Clock
+  * **Wall Clock**
+    * Used to keep track of the current time of day
+    * Subject to variation
+    * Great for humans
+    * Not great for measuring time
+  * **Monotonic Clock**
+    * Used for measuring time
+    * Not subject to variation
+    * Only meaningful for the process calling it
+    * Can be simulated by wall clock time
+* Formatting Time Output with `time` package
+  * Get current time with `time.Now()` function
+  * Format date with `t.Format()` method
+  * Refer to https://golang.org/pkg/time for more details
+* Calculating Time Spans
+  * Measure timespan using `time.Since()` and `time.Until()` functions
+  * Obtain dates by adding/subtracting timespan using `t.AddDate()` and `t.Add()` methods
+* Calculating Elapsed Time for Applications using `time.Since()` function
