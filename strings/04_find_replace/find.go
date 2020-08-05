@@ -24,7 +24,12 @@ func main() {
 	fmt.Printf("The sample text ends with %q: %t\n", searchTerm3, result3)
 
 	// Replace String
-	sampleString2 := "This is my string. There are many strings like it, but this one is mine."
-	sampleString2 = strings.Replace(sampleString2, "string", "compiler", -1)
-	fmt.Println(sampleString2)
+	sampleString = "This is my string. There are many strings like it, but this one is mine."
+	sampleString = strings.Replace(sampleString, "string", "compiler", -1)
+	fmt.Println(sampleString)
+
+	// Replace String (up to N times)
+	sampleString = "This is my string. There are many strings like it, but this one is mine."
+	sampleString = strings.Replace(sampleString, "string", "compiler", 1) // Only replace the first occurrence
+	fmt.Println(sampleString)
 }
