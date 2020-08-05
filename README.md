@@ -13,7 +13,8 @@ Practice materials for "The Go Standard Library" course
 * Scanning Input with `fmt.Sscanf()` and `fmt.Scanln()` functions - generally not as useful as `bufio` scanner
 * Formatting Output with `fmt.Printf()` function
 * Manipulating Strings with `fmt.Sprintf()` function and special color formats
-* Formatting other Data Types with different format specifiers - refer to https://golang.org/pkg/fmt for more details
+* Formatting other Data Types with different format specifiers
+  * Refer to https://golang.org/pkg/fmt for more details
 
 ### Using the Log Package
 * Understanding Common Error Levels:
@@ -35,7 +36,8 @@ Practice materials for "The Go Standard Library" course
 * Formatting Log Output with `log` package
   * Log fatal messages and stop the program with `log.Fatal()`
   * Log other types of messages with `log.Println()`
-  * Format messages with different flags - refer to https://golang.org/pkg/log for more details
+  * Format messages with different flags, e.g. `log.Ldate`, `log.Ltime`, `log.Lshortfile`, etc.
+  * Refer to https://golang.org/pkg/log for more details
 * Utilizing the Trace Logger with `runtime/trace` package
   * Use `go tool trace <TRACE_FILE>.out` command to open and view the trace file
 
@@ -65,7 +67,6 @@ Practice materials for "The Go Standard Library" course
   * Refer to https://golang.org/pkg/strings for more details
 * Comparing Strings with `strings.Compare()` function
   * When comparing large strings, `strings.Compare()` function can be more performant than `==` operator
-  * Use `string.ToLower()` to convert strings and compare case insensitive
 * Splitting Strings with `strings.Split()` function
 * Find and Replace in Strings with `strings.Contains()`, `strings.HasPrefix()`, `strings.HasSuffix()` and `strings.Replace`
 * Using Regular Expressions with `regexp` package
