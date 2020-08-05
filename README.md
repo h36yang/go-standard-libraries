@@ -4,8 +4,10 @@ Practice materials for "The Go Standard Library" course
 ### CLI Applications
 * Leveraging Command Line Arguments with `os.Args` slice
 * Adding Flags with `flag` package
+  * Refer to https://golang.org/pkg/flag for more details
 * Reading Keyboard Inputs with `fmt.Scanf()` function
 * Scanning Keyboard Inputs or Files with `bufio` package
+  * Refer to https://golang.org/pkg/bufio for more details
 
 ### Using the Fmt Package
 * Scanning Input with `fmt.Sscanf()` and `fmt.Scanln()` functions - generally not as useful as `bufio` scanner
@@ -57,3 +59,16 @@ Practice materials for "The Go Standard Library" course
   * Measure timespan using `time.Since()` and `time.Until()` functions
   * Obtain dates by adding/subtracting timespan using `t.AddDate()` and `t.Add()` methods
 * Calculating Elapsed Time for Applications using `time.Since()` function
+
+### Working with Strings
+* In Go, `String` is a *read-only slice of bytes* (not chars).
+  * Refer to https://golang.org/pkg/strings for more details
+* Comparing Strings with `strings.Compare()` function
+  * When comparing large strings, `strings.Compare()` function can be more performant than `==` operator
+  * Use `string.ToLower()` to convert strings and compare case insensitive
+* Splitting Strings with `strings.Split()` function
+* Find and Replace in Strings with `strings.Contains()`, `strings.HasPrefix()`, `strings.HasSuffix()` and `strings.Replace`
+* Using Regular Expressions with `regexp` package
+  * Refer to https://golang.org/pkg/regexp for more details
+* Trimming Strings with `strings.TrimSpace()`, `strings.TrimPrefix()` and `strings.TrimSuffix()` functions
+* Casing in Strings with `strings.ToUpper()`, `strings.ToLower()` and `strings.Title()` functions
