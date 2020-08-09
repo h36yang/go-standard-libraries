@@ -62,7 +62,7 @@ Practice materials for "The Go Standard Library" course
   * Obtain dates by adding/subtracting timespan using `t.AddDate()` and `t.Add()` methods
 * Calculating Elapsed Time for Applications using `time.Since()` function
 
-### Working with Strings
+### Working with Strings with the Strings Package
 * In Go, `String` is a *read-only slice of bytes* (not chars).
   * Refer to https://golang.org/pkg/strings for more details
 * Comparing Strings with `strings.Compare()` function
@@ -73,3 +73,21 @@ Practice materials for "The Go Standard Library" course
   * Refer to https://golang.org/pkg/regexp for more details
 * Trimming Strings with `strings.TrimSpace()`, `strings.TrimPrefix()` and `strings.TrimSuffix()` functions
 * Casing in Strings with `strings.ToUpper()`, `strings.ToLower()` and `strings.Title()` functions
+
+### Implementing Reflection with the Reflect Package
+* **Reflection** is the ability for your application to examine, introspect, and modify its own structure and behaviour. **Reflection** enables you to look at your own data at *runtime* and modify it if needed.
+  * Refer to https://golang.org/pkg/reflect for more details
+* Data Types in Go:
+  * **Basic Types** - `bool`, `string`, `int`, etc.
+  * **Aggregate Types** - `array`, `struct`, etc.
+  * **Reference Types** - `pointer`, `slice`, `chan`, `func`, etc.
+  * **Interface Types** - `interface{}`
+* Creating Custom Types with *interface*, *constructor*, *getters* and *setters*
+* Accessing Types at Runtime with `reflect.TypeOf()` and `reflect.ValueOf()` functions
+  * Use `t.Kind()` or `v.Kind()` method to access the *kind of type or value*
+* Creating Types at Runtime
+  * Use `reflect.MakeSlice()` function to create slice via reflection
+  * Use `reflect.Append()` function to append elements to slice created via reflection
+* Creating Functions at Runtime with `reflect.MakeFunc()` function
+  * Use `vf.Call()` method to call the function via reflection
+  * Use `runtime.FuncForPC(vf.Pointer())` method to access the `*Func` describing the function
